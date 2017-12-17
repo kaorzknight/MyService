@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--THB-->
+    <item
+        android:title="tha"
+        android:icon="@drawable/tha"
+        android:id="@+id/itemTHA"
+        app:showAsAction="always"/>
+
+    <!--USD-->
+    <item
+        android:title="usd"
+        android:icon="@drawable/usd"
+        android:id="@+id/itemUSD"
+        app:showAsAction="always"/>
+
+</menu>

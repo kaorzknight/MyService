@@ -5,9 +5,12 @@
     android:orientation="vertical">
 
     <!--Toolbar-->
-    <include layout="@layout/my_toolbar" />
+    <include layout="@layout/my_toolbar"
+        android:id="@+id/toolbarMain"/>
     <!--content-->
     <LinearLayout
+        android:padding="20dp"
+        android:background="#82ffffff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
@@ -33,6 +36,7 @@
                 android:layout_height="wrap_content" />
             <!--Text-->
             <TextView
+                android:textColor="@color/colorPrimaryDark"
                 android:layout_marginLeft="15dp"
                 android:textStyle="bold|italic"
                 android:textSize="24sp"
@@ -53,6 +57,7 @@
                 android:layout_height="wrap_content" />
             <!--Text-->
             <TextView
+                android:textColor="@color/colorPrimaryDark"
                 android:layout_marginLeft="15dp"
                 android:textStyle="bold|italic"
                 android:textSize="24sp"

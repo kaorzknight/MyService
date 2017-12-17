@@ -44,17 +44,16 @@ public class MainFragment extends Fragment {
         }
 //        USD
         if (item.getItemId()==R.id.itemUSD) {
-            myReplaceFragment("USD",0.031);
+            myReplaceFragment("USD",31);
         }
         return super.onOptionsItemSelected(item);
     }
 
     private void myReplaceFragment(String moneyString, double factorDouble) {
-
         getActivity().getSupportFragmentManager()
-                .beginTransaction().replace(R.id.contentMainFragment, new CalculateFragment())
+                .beginTransaction().replace(R.id.contentMainFragment,
+                CalculateFragment.calculateInstance(moneyString, factorDouble))
                 .addToBackStack(null).commit();
-
     }
 
     private void createToolbar() {

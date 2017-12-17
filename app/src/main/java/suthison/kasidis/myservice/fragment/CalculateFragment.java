@@ -70,9 +70,13 @@ public class CalculateFragment extends Fragment {
 //                Check Space
                 if (myMoneyString.isEmpty()) {
 //                    Have Space
-                    myAlertDialog("Have Space", "Please Fill in the Blank");
+                    myAlertDialog(getString(R.string.have_space), getString(R.string.message_space));
                 } else {
 //                    No Space
+                    Double moneyADouble = Double.parseDouble(myMoneyString);
+                    double answerADouble = moneyADouble * factorADouble;
+                    String answerString = Double.toString(answerADouble);
+                    myAlertDialog("Your Money",answerString);
                 }
             }   // onClick
         });

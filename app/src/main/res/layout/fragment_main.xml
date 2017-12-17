@@ -8,63 +8,70 @@
     <include layout="@layout/my_toolbar"
         android:id="@+id/toolbarMain"/>
     <!--content-->
-    <LinearLayout
-        android:padding="20dp"
-        android:background="#82ffffff"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin"
-        android:orientation="vertical">
-
-        <!--Logo-->
-        <ImageView
-            android:layout_marginBottom="@dimen/margin"
-            android:layout_width="@dimen/logo"
-            android:layout_height="@dimen/logo"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/logo" />
-        <!--Show Date-->
+        android:layout_height="match_parent">
         <LinearLayout
-            android:layout_marginLeft="@dimen/margin"
+            android:padding="20dp"
+            android:background="#82ffffff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <!--Icon-->
-            <ImageView
-                android:src="@drawable/ic_action_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <!--Text-->
-            <TextView
-                android:textColor="@color/colorPrimaryDark"
-                android:layout_marginLeft="15dp"
-                android:textStyle="bold|italic"
-                android:textSize="24sp"
-                android:text="2017-12-15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-        <!--Show Rate-->
-        <LinearLayout
-            android:layout_marginLeft="@dimen/margin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <!--Icon-->
-            <ImageView
-                android:src="@drawable/ic_action_rate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <!--Text-->
-            <TextView
-                android:textColor="@color/colorPrimaryDark"
-                android:layout_marginLeft="15dp"
-                android:textStyle="bold|italic"
-                android:textSize="24sp"
-                android:text="32.503"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+            android:layout_margin="@dimen/margin"
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <!--Logo-->
+            <ImageView
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_width="@dimen/logo"
+                android:layout_height="@dimen/logo"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo" />
+            <!--Show Date-->
+            <LinearLayout
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--Icon-->
+                <ImageView
+                    android:src="@drawable/ic_action_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!--Text-->
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold|italic"
+                    android:textSize="24sp"
+                    android:text="2017-12-15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--Show Rate-->
+            <LinearLayout
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--Icon-->
+                <ImageView
+                    android:src="@drawable/ic_action_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!--Text-->
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold|italic"
+                    android:textSize="24sp"
+                    android:text="32.503"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
 </LinearLayout>
